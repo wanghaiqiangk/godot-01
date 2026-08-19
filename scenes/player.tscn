@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cfpll34hjs5kb"]
 
-[ext_resource type="Script" uid="uid://byr0n7r6341kb" path="res://scenes/player.gd" id="1_qhqgy"]
+[ext_resource type="Script" uid="uid://byr0n7r6341kb" path="res://scripts/player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://4xxu41j473vi" path="res://resources/texture/W.png" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://djww0vw3lyox0" path="res://resources/texture/浮游炮.png" id="3_qlg0r"]
 
@@ -376,6 +376,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h0oqu"]
+radius = 6.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1178706923]
 script = ExtResource("1_qhqgy")
@@ -390,4 +391,5 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_r74ap")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1914538003]
+position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_h0oqu")
